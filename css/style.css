@@ -1,0 +1,99 @@
+#grid-layout {
+  display: grid;
+  grid-template-areas:
+    'menu-area product-area'
+    'menu-area checkout-area';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.cart {
+  border: 1px solid black;
+  text-align: left;
+}
+
+.cart th {
+  border: 1px solid black;
+  text-align: left;
+}
+
+.cart td {
+  border: 1px solid black;
+  text-align: left;
+}
+
+#heading {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  text-align: center;
+  margin-right: 50%;
+}
+
+#grocery-menu {
+  background-color: aqua;
+  position: absolute;
+  width: 50%;
+  font-size:0;
+  grid-area: menu-area;
+  margin-top: 80px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.options {
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+#display-product {
+  background-color: #5cb85c;
+  position: absolute;
+  width: 50%;
+  height: 60%;
+  grid-area: product-area;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+
+}
+
+#checkout {
+  background-color: aquamarine;
+  position: absolute;
+  width: 50%;
+  height: 40%;
+  grid-area: checkout-area;
+  bottom: 0;
+  right: 0;
+  overflow-x: hidden;
+}
+
+strong {
+  color: red;
+}
+
+img {
+  float: right;
+}
+
+#hide {
+  position: absolute;
+  padding-top: 20px;
+  width: 50%;
+  grid-area: menu-area;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  text-align: center;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: none;
+}
+
